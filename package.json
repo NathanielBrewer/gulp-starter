@@ -1,0 +1,39 @@
+{
+  "private": true,
+  "name": "gulp-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "author": "nathanielc.brewer@gmail.com",
+  "scripts": {
+    "dev": "npx gulp",
+    "build": "npx gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "del": "^4.0.0",
+    "gulp": "4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cached": "^1.1.1",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-eol": "^0.2.0",
+    "gulp-file-include": "^2.0.1",
+    "gulp-if": "^2.0.2",
+    "gulp-npm-dist": "^1.0.2",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-useref": "^3.1.6",
+    "run-sequence": "^2.2.1",
+    "stream-combiner2": "^1.1.1",
+    "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "bootstrap": "4.3.1",
+    "jquery": "^3.3.1",
+    "typed.js": "^2.0.10",
+    "video.js": "^7.11.4",
+    "swiper": "^7.0.6"
+  }
+}

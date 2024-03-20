@@ -1,0 +1,141 @@
+html {
+  font-family: 'Playfair Display', "Helvetica Neue", serif;
+  min-height: 100%;
+}
+
+body {
+  background: #090c05;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-bottom: $footer-height;
+}
+
+.footer {
+  height: $footer-height;
+  width: 100vw;
+  position: fixed;
+  top: calc(100vh - $footer-height);
+  &_copyright {
+    padding-right: $spacer;
+    display: block;
+    text-align: right;
+    color: $secondary-shade;
+  }
+}
+
+main {
+  width: 100vw;
+  max-width: 1200px;
+  height: 100vh;
+}
+
+p {
+  margin: 0;
+}
+
+.selectable {
+}
+
+.selectable:hover {
+  cursor: pointer;
+  opacity: .8;
+  text-decoration: underline;
+}
+
+.nav-menu {
+  $nav-menu_font-size: 2rem;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: fixed;
+  position: -webkit-sticky;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  width: unset;
+  font-size: $nav-menu_font-size;
+  opacity: .75;
+  &_option {
+    padding-bottom: .6rem !important; //override $text-padding bottom because of underline
+    line-height: $nav-menu_font-size;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+    padding: $text-padding;
+    width: fit-content;
+    height: fit-content;
+    color: $dark;
+    background: rgba(245, 248, 239, 1);
+    &_secondary-hover:hover {
+      color: $secondary !important;
+    }
+  }
+  &_option:hover {
+    box-shadow: 1rem 1rem;
+  }
+}
+
+.swiper {
+  --swiper-navigation-color: $light;
+  --swiper-text-control-background: rgba(0, 0, 0, .66667);
+  .swiper-slide {
+    position: relative;
+    text-align: center;
+    font-size: 1rem;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    p {
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      background: var(--swiper-text-control-background);
+      color: $light;
+      padding: 0 .5rem;
+      max-width: calc(100% - 40px - (2 * var(--swiper-navigation-size)));
+    }
+  }
+
+  .swiper-pagination-fraction {
+    color: white;
+    font-size: .75rem;
+    background: var(--swiper-text-control-background);
+  }
+
+  .swiper-button-next {
+    color: $light;
+  }
+
+  .swiper-button-prev {
+    color: $light;
+  }
+
+  .swiper-button-prev::after {
+    background: var(--swiper-text-control-background);
+    padding: .5rem;
+  }
+
+  .swiper-button-next::after {
+    background: var(--swiper-text-control-background);
+    padding: .5rem;
+  }
+
+  .swiper-scrollbar {
+    background: var(--swiper-text-control-background);
+  }
+
+  .swiper-scrollbar-drag {
+    background: white;
+  }
+}

@@ -1,0 +1,20 @@
+$light: #f5f8ef !default;
+$light-rgb: rgb(245, 248, 239);
+$dark: #090c05 !default;
+$base: #556b2f !default; // olive-green
+$primary: $base !default;
+$primary-rgb: rgb(99, 47, 107);
+$primary-shade: #35421d !default;
+$primary-tint: #94b659 !default;
+$secondary: #632f6b !default; // purple
+$secondary-shade: #3d1d42 !default;
+$secondary-tint: #aa59b6 !default;
+$tertiary: #2f376b !default;
+$tertiary-shade: #1d2242 !default;
+$tertiary-tint: #5966b6 !default;
+
+$text-padding: 0.3rem 1rem 0.3rem 1rem !default;
+
+$selectable-opacity: 0.8;
+
+$footer-height: 1.5rem;
